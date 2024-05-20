@@ -14,7 +14,7 @@ def formatResponse(input):
     return response[7:87]
 
 
-url = "https://remitademo.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit"
+url = "https://demo.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit"
 merchantId = "2547916"
 apiKey = "1946"
 serviceTypeId = "4430731"
