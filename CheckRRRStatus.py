@@ -15,7 +15,7 @@ rrr = "240008240803"
 apiHash = sha512(rrr + apiKey + merchantId)
 print(apiHash)
 
-checkStatus = 'https://remitademo.net/remita/ecomm/' + merchantId + "/" + rrr + "/" + apiHash + "/status.reg"
+checkStatus = 'https://demo.remita.net/remita/ecomm/' + merchantId + "/" + rrr + "/" + apiHash + "/status.reg"
 print(checkStatus)
 r = requests.get(checkStatus)
 print(r.text)
