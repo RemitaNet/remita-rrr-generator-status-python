@@ -13,7 +13,6 @@ def formatResponse(input):
     response = input.text
     return response[7:87]
 
-
 url = "https://demo.remita.net/remita/exapp/api/v1/send/api/echannelsvc/merchant/api/paymentinit"
 merchantId = "2547916"
 apiKey = "1946"
@@ -40,4 +39,5 @@ payload = {
 
 response = requests.post(url, headers=headers, json=payload)
 response = formatResponse(response)
+print()
 print(response)
