@@ -19,11 +19,10 @@ merchantId = "2547916"
 apiKey = "1946"
 serviceTypeId = "4430731"
 orderId = str(random.random() * 1000000000)
-print(orderId)
+
 totalAmount = "20000"
 
 apiHash = sha512(merchantId + serviceTypeId + orderId + totalAmount + apiKey)
-print(apiHash)
 
 headers = {'Content-Type': 'application/json',
            'Authorization': 'remitaConsumerKey=' + merchantId + ',remitaConsumerToken=' + apiHash
